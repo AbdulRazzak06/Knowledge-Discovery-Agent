@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Results – Multi-Agent Research Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        background: #f5f7fa;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .page-header {
+        border-bottom: 3px solid #0d6efd;
+        padding-bottom: 0.4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .card {
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .card-agent {
+        background: #fff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 0.95rem;
+        white-space: pre-wrap;
+        color: #212529;
+        max-height: 350px;
+        overflow-y: auto;
+      }
+
+      .agent-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        color: #0d6efd;
+        font-size: 1.1rem;
+      }
+
+      .report-html {
+        background: #ffffff;
+        border-left: 5px solid #0d6efd;
+        border-radius: 0.5rem;
+        padding: 1rem 1.2rem;
+        line-height: 1.6;
+        color: #212529;
+      }
+
+      .download-bar {
+        background: #eef3ff;
+        border: 1px solid #cfe2ff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        text-align: right;
+      }
+
+      .download-bar button {
+        min-width: 220px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container py-4">
+      <div class="page-header d-flex justify-content-between align-items-center">
+        <div>
+          <h2 class="fw-bold mb-1">Multi-Agent Research Results</h2>
+          <p class="text-muted mb-0">
+            <strong>Query:</strong> Explainable AI: Making black-box models interpretable
+          </p>
+          <small class="text-muted">Generated at 2025-11-01T07:40:18.666138</small>
+        </div>
+        <a href="/" class="btn btn-outline-primary"
+          ><i class="bi bi-arrow-left"></i> New Query</a
+        >
+      </div>
+
+      <div class="row g-4 mb-4">
+        <!-- Knowledge Agent -->
+        <div class="col-md-6">
+          <div class="card p-3">
+            <div class="agent-title">
+              <i class="bi bi-lightbulb"></i> Knowledge Agent
+            </div>
+            <hr class="mt-2 mb-2" />
+            <div class="card-agent">
+              - **Definition**: Explainable AI (XAI) refers to methods and techniques in artificial intelligence that make the functioning of machine learning models, particularly those that are complex and termed "black-box," interpretable and comprehensible to humans.
+
+- **Importance**: As AI systems are increasingly deployed in high-stakes domains (e.g., healthcare, finance), understanding their decision-making processes becomes crucial for trust, accountability, and ethical considerations (Doshi-Velez & Kim, 2017, "Towards a rigorous science of interpretable machine learning").
+
+- **Techniques**: Common XAI techniques include feature importance metrics, LIME (Local Interpretable Model-agnostic Explanations), SHAP (SHapley Additive exPlanations), and visualization methods that help simplify the explanations of model predictions (Miller, 2019, "Explanation in artificial intelligence: Insights from the social sciences").
+
+- **Regulatory Landscape**: Emerging regulations, such as the EU’s GDPR, mandate certain levels of transparency in AI systems, thereby pushing for XAI implementations to comply with legal standards (European Commission, 2020).
+
+- **Context of Use**: XAI plays a crucial role in areas requiring human-AI interaction, ensuring that users can validate and trust AI decisions while also allowing for corrective measures when necessary due to errors or biases in outputs (Gilpin et al., 2018, "Explaining explanations: An overview of interpretability of machine learning").
+            </div>
+          </div>
+        </div>
+
+        <!-- Analysis Agent -->
+        <div class="col-md-6">
+          <div class="card p-3">
+            <div class="agent-title">
+              <i class="bi bi-bar-chart-line"></i> Analysis Agent
+            </div>
+            <hr class="mt-2 mb-2" />
+            <div class="card-agent">
+              ### Structured Analysis of Explainable AI (XAI)
+
+#### Key Themes
+1. **Interpretability**: The necessity of making complex AI models transparent and understandable for users, especially in critical applications.
+2. **Trust and Accountability**: Building user trust in AI decisions through transparency, thereby promoting accountability in AI systems.
+3. **Regulatory Compliance**: Adapting AI systems to meet emerging legal standards, which emphasize the need for transparency and ethical behavior in AI applications.
+
+#### Causal Links
+- The increasing deployment of AI in high-stakes sectors leads to a demand for interpretability, which is facilitated by XAI techniques.
+- Trust and accountability are heightened when AI models are understandable, influencing public and organizational acceptance of AI technologies.
+- Regulatory requirements push organizations to implement XAI, ensuring that AI decisions can be explained and justified.
+
+#### Risks
+- **Over-reliance on AI**: Users may overly trust interpreted outputs without adequate understanding of the model's limitations.
+- **Misinterpretation of Explanations**: Inadequate or overly complex explanations can lead to confusion, resulting in distrust rather than trust.
+- **Inadequate Compliance**: Organizations may struggle to meet regulatory expectations if they lack thorough XAI implementations, leading to legal repercussions.
+
+#### Opportunities
+- **Enhanced User Engagement**: By improving transparency, XAI encourages users to interact more deeply with AI systems, potentially leading to better human-AI collaboration.
+- **Improvement of Model Accuracy**: Insight from XAI techniques can help identify areas of bias or inaccuracies in AI models, providing pathways for refinement.
+- **Competitive Advantage**: Organizations adopting effective XAI methodologies can differentiate themselves in the market, fostering consumer trust and loyalty.
+
+#### Insights
+1. **Importance of Contextualizing Explanations**: When applying XAI, it's crucial to tailor the explanations to the user’s level of expertise and the specific context in which the AI system operates.
+   
+2. **Integration with Feedback Loops**: Effective XAI should incorporate user feedback mechanisms, allowing for continuous improvement of both the AI model and the explanations provided.
+   
+3. **Interdisciplinary Approach**: Combining insights from social sciences and AI can enhance the interpretability methods used in XAI, offering a more holistic understanding of model behavior.
+
+#### Assumptions
+1. Users have varying levels of understanding and expertise regarding AI systems, necessitating different XAI strategies.
+2. The ethical implications of AI decisions are becoming increasingly important in regulatory frameworks, leading to a greater emphasis on XAI as a compliance measure.
+3. The effectiveness of XAI techniques can vary significantly depending on the specific use case and the complexity of the underlying AI model.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Report -->
+      <div class="card p-4 mb-4">
+        <div class="agent-title mb-2">
+          <i class="bi bi-file-earmark-text"></i> Response Agent – Final Report
+        </div>
+        <div class="report-html mt-3">
+          ```html
+<h3>Executive Summary</h3>
+<p>Explainable AI (XAI) addresses the critical need for interpretability in complex AI models, fostering user trust and accountability. As regulatory demands for transparency rise, organizations must adapt their AI systems to ensure decisions are understandable and actionable.</p>
+
+<h3>Detailed Findings</h3>
+<p>The analysis of Explainable AI (XAI) reveals several key insights regarding its importance and impact:</p>
+<ul>
+    <li><strong>Interpretability:</strong> Users require transparent AI systems, especially in high-stakes applications, to understand how decisions are made.</li>
+    <li><strong>Trust and Accountability:</strong> Clear explanations enhance trust in AI systems and promote accountability, which is essential for widespread adoption.</li>
+    <li><strong>Regulatory Compliance:</strong> Emerging legal standards are pushing organizations to implement XAI techniques to ensure ethical and transparent AI behavior.</li>
+</ul>
+<p>However, risks exist, including:</p>
+<ul>
+    <li><strong>Over-reliance on AI:</strong> Users may trust outputs too much without a full understanding of the limitations.</li>
+    <li><strong>Misinterpretation of Explanations:</strong> Complex or inadequate explanations can create confusion and erode trust.</li>
+    <li><strong>Inadequate Compliance:</strong> Failing to implement sufficient XAI measures can lead to compliance challenges.</li>
+</ul>
+<p>Opportunities presented by XAI include:</p>
+<ul>
+    <li><strong>Enhanced User Engagement:</strong> Improved transparency fosters deeper user interaction with AI systems.</li>
+    <li><strong>Improvement of Model Accuracy:</strong> Insights from XAI can help identify biases and refine AI models.</li>
+    <li><strong>Competitive Advantage:</strong> Organizations utilizing XAI effectively can stand out in the marketplace.</li>
+</ul>
+<p>Key insights emphasize the need for context in explanations, incorporating user feedback, and an interdisciplinary approach to enhance verstehen of model behavior.</p>
+
+<h3>Recommended Next Steps</h3>
+<ul>
+    <li>Develop tailored XAI strategies that consider the varying expertise levels of users.</li>
+    <li>Integrate user feedback mechanisms to continually refine both AI models and the clarity of the explanations provided.</li>
+    <li>Foster collaboration between AI experts and social scientists to improve the interpretability of XAI methods.</li>
+</ul>
+```
+        </div>
+      </div>
+
+      <!-- Download Bar -->
+      <form action="/download_report" method="post" class="download-bar">
+        <input type="hidden" name="final_html" value="```html
+<h3>Executive Summary</h3>
+<p>Explainable AI (XAI) addresses the critical need for interpretability in complex AI models, fostering user trust and accountability. As regulatory demands for transparency rise, organizations must adapt their AI systems to ensure decisions are understandable and actionable.</p>
+
+<h3>Detailed Findings</h3>
+<p>The analysis of Explainable AI (XAI) reveals several key insights regarding its importance and impact:</p>
+<ul>
+    <li><strong>Interpretability:</strong> Users require transparent AI systems, especially in high-stakes applications, to understand how decisions are made.</li>
+    <li><strong>Trust and Accountability:</strong> Clear explanations enhance trust in AI systems and promote accountability, which is essential for widespread adoption.</li>
+    <li><strong>Regulatory Compliance:</strong> Emerging legal standards are pushing organizations to implement XAI techniques to ensure ethical and transparent AI behavior.</li>
+</ul>
+<p>However, risks exist, including:</p>
+<ul>
+    <li><strong>Over-reliance on AI:</strong> Users may trust outputs too much without a full understanding of the limitations.</li>
+    <li><strong>Misinterpretation of Explanations:</strong> Complex or inadequate explanations can create confusion and erode trust.</li>
+    <li><strong>Inadequate Compliance:</strong> Failing to implement sufficient XAI measures can lead to compliance challenges.</li>
+</ul>
+<p>Opportunities presented by XAI include:</p>
+<ul>
+    <li><strong>Enhanced User Engagement:</strong> Improved transparency fosters deeper user interaction with AI systems.</li>
+    <li><strong>Improvement of Model Accuracy:</strong> Insights from XAI can help identify biases and refine AI models.</li>
+    <li><strong>Competitive Advantage:</strong> Organizations utilizing XAI effectively can stand out in the marketplace.</li>
+</ul>
+<p>Key insights emphasize the need for context in explanations, incorporating user feedback, and an interdisciplinary approach to enhance verstehen of model behavior.</p>
+
+<h3>Recommended Next Steps</h3>
+<ul>
+    <li>Develop tailored XAI strategies that consider the varying expertise levels of users.</li>
+    <li>Integrate user feedback mechanisms to continually refine both AI models and the clarity of the explanations provided.</li>
+    <li>Foster collaboration between AI experts and social scientists to improve the interpretability of XAI methods.</li>
+</ul>
+```" />
+        <input type="hidden" name="title" value="AI_Research_Report" />
+        <button type="submit" class="btn btn-primary btn-lg">
+          <i class="bi bi-download"></i> Download HTML Report
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
